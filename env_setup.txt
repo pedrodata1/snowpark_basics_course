@@ -8,12 +8,14 @@
 
 conda create --name py12_env --override-channels -c https://repo.anaconda.com/pkgs/snowflake python=3.12 numpy pandas pyarrow
 
-# Create new terminal and enter
+# Create new terminal and enter these commands (init, activate)
 
-conda init
+conda init 
 
+# Conda environment activation command. You are telling Conda: "Switch my current terminal to use the environment named py12_env"
 conda activate py12_env
 
+# Conda command that installs the Snowpark library for Python into your currently active Conda environment
 # conda install snowflake-snowpark-python -- if this command do not work then try pip command
 
 pip install snowflake-snowpark-python
