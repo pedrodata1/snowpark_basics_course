@@ -1,3 +1,11 @@
+# conda create  --> Create a new Conda environment
+# --name py12_env ---> Name of the environment = py12_env
+# --override-channels ---> Ignore your default .condarc channels and use only what you specify here
+# -c https://repo.anaconda.com/pkgs/snowflake ---> Use the Snowflake Anaconda channel as the only package source
+# python=3.12 ---> Install Python 3.12
+# numpy pandas pyarrow ---> Install these packages into the new environment
+
+
 conda create --name py12_env --override-channels -c https://repo.anaconda.com/pkgs/snowflake python=3.12 numpy pandas pyarrow
 
 # Create new terminal and enter
